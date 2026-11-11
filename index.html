@@ -1,0 +1,791 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Best Smile Dental Singapore | Gentle, Reliable Dental Care</title>
+  <meta name="description" content="Discover gentle, modern dental care at Best Smile Dental in Upper Boon Keng, Singapore. Explore general dentistry, Invisalign, dental implants and more.">
+  <meta name="theme-color" content="#263B38">
+  <meta property="og:title" content="Best Smile Dental | Care That Puts You at Ease">
+  <meta property="og:description" content="Gentle, affordable and reliable dental care in Upper Boon Keng, Singapore.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-primary: #263B38;
+      --color-primary-dark: #1B2D2A;
+      --color-primary-light: #66877C;
+      --color-secondary: #E2EBE6;
+      --color-secondary-light: #F3F7F5;
+      --color-accent: #B9CEC4;
+      --color-heading: #263B38;
+      --color-text: #45534F;
+      --color-text-muted: #71807A;
+      --color-background: #FFFFFF;
+      --color-background-alt: #F3F7F5;
+      --color-surface: #FFFFFF;
+      --color-border: #DCE6E0;
+      --color-interactive: #263B38;
+      --color-interactive-hover: #1B2D2A;
+      --color-focus: #66877C;
+      --font-heading: "Manrope", sans-serif;
+      --font-body: "Inter", sans-serif;
+      --container: 1200px;
+      --radius-sm: 12px;
+      --radius-md: 22px;
+      --radius-lg: 34px;
+      --shadow-soft: 0 18px 55px rgba(38,59,56,.09);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+    body {
+      margin: 0;
+      background: var(--color-background);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    .container { width: min(var(--container), calc(100% - 48px)); margin-inline: auto; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      color: var(--color-primary-light); text-transform: uppercase;
+      letter-spacing: .15em; font-size: .72rem; font-weight: 700;
+    }
+    .eyebrow::before { content: ""; width: 24px; height: 1px; background: currentColor; }
+    h1, h2, h3, h4 {
+      color: var(--color-heading); font-family: var(--font-heading);
+      line-height: 1.12; letter-spacing: -.045em; margin: 0;
+    }
+    h1 { font-size: clamp(2.7rem, 6vw, 5.6rem); font-weight: 700; }
+    h2 { font-size: clamp(2.1rem, 4vw, 3.65rem); font-weight: 700; }
+    h3 { font-size: 1.35rem; font-weight: 700; }
+    p { margin: 0; }
+    .section { padding: 112px 0; }
+    .section-soft { background: var(--color-background-alt); }
+    .section-heading { max-width: 690px; margin-bottom: 48px; }
+    .section-heading h2 { margin-top: 17px; }
+    .section-heading p { margin-top: 20px; max-width: 590px; color: var(--color-text-muted); }
+    .button {
+      min-height: 54px; display: inline-flex; align-items: center; justify-content: center;
+      gap: 10px; padding: 0 24px; border: 1px solid transparent;
+      border-radius: 999px; font-size: .88rem; font-weight: 700;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { background: var(--color-primary); color: white; }
+    .button-primary:hover { background: var(--color-interactive-hover); }
+    .button-outline { border-color: var(--color-border); color: var(--color-primary); background: transparent; }
+    .button-outline:hover { border-color: var(--color-primary-light); background: white; }
+    .button-light { background: white; color: var(--color-primary); }
+    .button svg { width: 17px; height: 17px; }
+    a:focus-visible, button:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--color-focus); outline-offset: 4px;
+    }
+
+    /* Header */
+    .site-header {
+      position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.94);
+      backdrop-filter: blur(14px); border-bottom: 1px solid rgba(220,230,224,.8);
+    }
+    .nav-wrap { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--color-primary); }
+    .brand-mark {
+      width: 39px; height: 39px; border-radius: 13px; display: grid; place-items: center;
+      background: var(--color-primary); color: white; font: 800 1rem var(--font-heading);
+      letter-spacing: -.08em;
+    }
+    .brand-name { display: block; font: 800 1.05rem var(--font-heading); letter-spacing: -.045em; line-height: 1.1; }
+    .brand-sub { display: block; color: var(--color-text-muted); font-size: .58rem; letter-spacing: .16em; text-transform: uppercase; margin-top: 4px; }
+    .nav-links { display: flex; align-items: center; gap: 29px; font-size: .82rem; font-weight: 600; color: var(--color-text); }
+    .nav-links a:hover { color: var(--color-primary-light); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+    .nav-actions .button { min-height: 46px; padding-inline: 19px; }
+    .menu-toggle {
+      display: none; border: 1px solid var(--color-border); border-radius: 50%;
+      width: 45px; height: 45px; background: white; color: var(--color-primary);
+      cursor: pointer; font-size: 1.25rem;
+    }
+
+    /* Hero */
+    .hero { padding: 62px 0 82px; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.02fr .98fr; align-items: center; gap: 55px; }
+    .hero-copy { padding: 20px 0; }
+    .hero h1 { max-width: 680px; margin-top: 23px; }
+    .hero h1 em { color: var(--color-primary-light); font-style: normal; }
+    .hero-copy > p { max-width: 540px; margin-top: 25px; font-size: 1.04rem; color: var(--color-text-muted); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .hero-note { display: flex; align-items: center; gap: 12px; margin-top: 30px; color: var(--color-text-muted); font-size: .78rem; }
+    .note-dot { width: 8px; height: 8px; background: var(--color-primary-light); border-radius: 50%; }
+    .hero-visual { min-height: 590px; position: relative; }
+    .hero-photo {
+      position: absolute; inset: 0 25px 30px 45px; overflow: hidden;
+      border-radius: 46% 46% 24px 24px; background: var(--color-secondary);
+    }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-visual::before {
+      content: ""; position: absolute; width: 210px; height: 210px; border-radius: 50%;
+      border: 1px solid var(--color-accent); top: -10px; right: -30px;
+    }
+    .hero-visual::after {
+      content: ""; position: absolute; width: 135px; height: 135px; border-radius: 50%;
+      background: var(--color-secondary); left: 0; bottom: 0; z-index: -1;
+    }
+    .hero-stamp {
+      position: absolute; right: 0; bottom: 66px; width: 170px; height: 170px;
+      border-radius: 50%; display: grid; place-items: center; text-align: center;
+      padding: 25px; background: var(--color-primary); color: white;
+      box-shadow: var(--shadow-soft); transform: rotate(7deg);
+    }
+    .hero-stamp strong { display: block; font: 700 1.25rem var(--font-heading); line-height: 1.2; }
+    .hero-stamp span { display: block; font-size: .67rem; margin-top: 7px; opacity: .8; }
+
+    /* Reassurance strip */
+    .reassurance { border-block: 1px solid var(--color-border); }
+    .reassurance-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+    .reassurance-item { padding: 26px 18px; display: flex; align-items: center; justify-content: center; gap: 12px; border-right: 1px solid var(--color-border); }
+    .reassurance-item:last-child { border-right: 0; }
+    .reassurance-mark { width: 9px; height: 9px; border-radius: 50%; background: var(--color-primary-light); flex: 0 0 auto; }
+    .reassurance-item span { font-size: .78rem; font-weight: 600; color: var(--color-primary); }
+
+    /* Service discovery */
+    .service-intro { display: flex; align-items: end; justify-content: space-between; gap: 30px; }
+    .service-intro .section-heading { margin-bottom: 0; }
+    .service-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 52px; }
+    .service-card {
+      min-height: 245px; padding: 29px; background: white; border: 1px solid var(--color-border);
+      border-radius: var(--radius-md); display: flex; flex-direction: column;
+      justify-content: space-between; transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-soft); }
+    .service-icon {
+      width: 54px; height: 54px; border-radius: 17px; display: grid; place-items: center;
+      background: var(--color-secondary-light); color: var(--color-primary-light);
+    }
+    .service-icon svg { width: 29px; height: 29px; fill: none; stroke: currentColor; stroke-width: 1.55; stroke-linecap: round; stroke-linejoin: round; }
+    .service-card h3 { margin-top: 25px; }
+    .service-card p { color: var(--color-text-muted); font-size: .85rem; margin-top: 9px; }
+    .service-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 23px; color: var(--color-primary); font-size: .8rem; font-weight: 700; }
+    .service-link span { transition: transform .2s ease; }
+    .service-link:hover span { transform: translateX(4px); }
+
+    /* Patient-first story */
+    .comfort-grid { display: grid; grid-template-columns: .95fr 1.05fr; align-items: center; gap: 78px; }
+    .comfort-visual { position: relative; min-height: 560px; }
+    .comfort-photo { position: absolute; inset: 0 45px 35px 0; border-radius: 28px 180px 28px 28px; overflow: hidden; background: var(--color-secondary); }
+    .comfort-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .comfort-caption {
+      position: absolute; right: 0; bottom: 0; width: 220px; padding: 23px;
+      background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-soft);
+    }
+    .comfort-caption strong { display: block; font: 700 1.05rem var(--font-heading); color: var(--color-primary); }
+    .comfort-caption span { display: block; margin-top: 6px; font-size: .75rem; color: var(--color-text-muted); }
+    .comfort-copy h2 { margin-top: 18px; }
+    .comfort-copy > p { margin-top: 20px; color: var(--color-text-muted); }
+    .benefit-list { display: grid; gap: 19px; margin-top: 31px; }
+    .benefit { display: grid; grid-template-columns: 30px 1fr; gap: 13px; }
+    .benefit-check { width: 27px; height: 27px; display: grid; place-items: center; border-radius: 50%; background: var(--color-secondary); color: var(--color-primary); font-weight: 800; font-size: .8rem; }
+    .benefit strong { display: block; color: var(--color-primary); font-size: .91rem; }
+    .benefit span { display: block; color: var(--color-text-muted); font-size: .82rem; margin-top: 3px; }
+
+    /* Technology */
+    .technology { background: var(--color-primary); color: rgba(255,255,255,.74); overflow: hidden; }
+    .technology h2, .technology h3 { color: white; }
+    .technology .eyebrow { color: var(--color-accent); }
+    .technology .section-heading p { color: rgba(255,255,255,.68); }
+    .tech-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 80px; align-items: start; }
+    .tech-aside { position: sticky; top: 120px; }
+    .tech-aside h2 { margin-top: 18px; }
+    .tech-aside p { margin-top: 20px; }
+    .tech-list { border-top: 1px solid rgba(255,255,255,.2); }
+    .tech-row { padding: 25px 0; display: grid; grid-template-columns: 48px 1fr; gap: 18px; border-bottom: 1px solid rgba(255,255,255,.2); }
+    .tech-number { font: 700 .8rem var(--font-heading); color: var(--color-accent); padding-top: 3px; }
+    .tech-row p { font-size: .83rem; margin-top: 7px; color: rgba(255,255,255,.65); }
+
+    /* Doctors */
+    .doctor-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .doctor-card { border-radius: var(--radius-md); overflow: hidden; background: var(--color-background-alt); }
+    .doctor-photo { height: 310px; background: var(--color-secondary); overflow: hidden; }
+    .doctor-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .doctor-info { padding: 25px; }
+    .doctor-info .credential { color: var(--color-primary-light); font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+    .doctor-info h3 { margin-top: 9px; }
+    .doctor-info p { margin-top: 10px; color: var(--color-text-muted); font-size: .82rem; }
+
+    /* Journey */
+    .journey-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 34px; counter-reset: journey; }
+    .journey-step { border-top: 1px solid var(--color-border); padding-top: 22px; counter-increment: journey; }
+    .journey-step::before { content: "0" counter(journey); color: var(--color-primary-light); font: 700 .82rem var(--font-heading); }
+    .journey-step h3 { margin-top: 22px; }
+    .journey-step p { margin-top: 10px; color: var(--color-text-muted); font-size: .85rem; }
+
+    /* Location CTA */
+    .visit-panel {
+      display: grid; grid-template-columns: 1fr .8fr; gap: 55px; align-items: center;
+      padding: 58px; border-radius: var(--radius-lg); background: var(--color-secondary-light);
+    }
+    .visit-panel h2 { margin-top: 17px; }
+    .visit-panel p { margin-top: 17px; color: var(--color-text-muted); }
+    .visit-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .hours-box { background: white; border: 1px solid var(--color-border); padding: 28px; border-radius: var(--radius-md); }
+    .hours-box h3 { margin-bottom: 18px; }
+    .hours-row { display: flex; justify-content: space-between; gap: 20px; padding: 10px 0; border-bottom: 1px solid var(--color-border); font-size: .78rem; }
+    .hours-row:last-child { border: 0; }
+    .hours-row strong { color: var(--color-primary); text-align: right; }
+
+    /* FAQ */
+    .faq-layout { display: grid; grid-template-columns: .7fr 1.3fr; gap: 75px; }
+    .faq-list { border-top: 1px solid var(--color-border); }
+    .faq-list details { border-bottom: 1px solid var(--color-border); }
+    .faq-list summary {
+      list-style: none; cursor: pointer; padding: 22px 38px 22px 0;
+      position: relative; color: var(--color-primary); font: 700 .98rem var(--font-heading);
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after { content: "+"; position: absolute; right: 4px; top: 17px; font: 400 1.5rem var(--font-body); color: var(--color-primary-light); }
+    .faq-list details[open] summary::after { content: "−"; }
+    .faq-list details p { padding: 0 35px 22px 0; color: var(--color-text-muted); font-size: .85rem; }
+
+    /* Footer */
+    .site-footer { background: var(--color-primary-dark); color: rgba(255,255,255,.7); padding: 70px 0 30px; }
+    .footer-grid { display: grid; grid-template-columns: 1.3fr .7fr .8fr; gap: 60px; }
+    .footer-brand { color: white; }
+    .footer-brand .brand-sub { color: rgba(255,255,255,.55); }
+    .footer-about { max-width: 360px; margin-top: 22px; font-size: .82rem; }
+    .footer-col h3 { color: white; font-size: .92rem; letter-spacing: 0; }
+    .footer-links { display: grid; gap: 12px; margin-top: 19px; font-size: .8rem; }
+    .footer-links a:hover { color: white; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.16); margin-top: 55px; padding-top: 22px; display: flex; justify-content: space-between; gap: 20px; font-size: .72rem; }
+    .mobile-cta { display: none; }
+
+    @media (max-width: 980px) {
+      .nav-links { gap: 16px; }
+      .nav-links a { font-size: .76rem; }
+      .hero-grid { gap: 25px; }
+      .hero-visual { min-height: 500px; }
+      .comfort-grid { gap: 45px; }
+      .tech-layout { gap: 45px; }
+      .visit-panel { padding: 38px; gap: 30px; }
+    }
+    @media (max-width: 760px) {
+      html { scroll-padding-top: 80px; }
+      .container { width: min(100% - 36px, var(--container)); }
+      .section { padding: 78px 0; }
+      .nav-wrap { min-height: 72px; }
+      .menu-toggle { display: block; }
+      .nav-actions { display: none; }
+      .nav-links {
+        display: none; position: absolute; top: 72px; left: 0; right: 0;
+        padding: 20px 24px 25px; background: white; border-bottom: 1px solid var(--color-border);
+        flex-direction: column; align-items: stretch; gap: 0;
+      }
+      .nav-links.is-open { display: flex; }
+      .nav-links a { padding: 13px 0; border-bottom: 1px solid var(--color-border); font-size: .9rem; }
+      .hero { padding: 42px 0 55px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 35px; }
+      .hero h1 { font-size: clamp(2.7rem, 12vw, 4.4rem); }
+      .hero-copy > p { font-size: .95rem; }
+      .hero-visual { min-height: 430px; margin: 0 4px; }
+      .hero-photo { inset: 0 25px 22px 20px; border-radius: 48% 48% 20px 20px; }
+      .hero-stamp { width: 130px; height: 130px; bottom: 30px; right: -2px; padding: 18px; }
+      .hero-stamp strong { font-size: 1rem; }
+      .hero-stamp span { font-size: .58rem; }
+      .reassurance-grid { grid-template-columns: repeat(2,1fr); }
+      .reassurance-item { justify-content: flex-start; padding: 18px 8px; border-bottom: 1px solid var(--color-border); }
+      .reassurance-item:nth-child(2) { border-right: 0; }
+      .reassurance-item:nth-child(3), .reassurance-item:nth-child(4) { border-bottom: 0; }
+      .reassurance-item span { font-size: .7rem; }
+      .service-intro { display: block; }
+      .service-intro > .button { margin-top: 25px; }
+      .service-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin-top: 34px; }
+      .service-card { min-height: 235px; padding: 19px; }
+      .service-card h3 { font-size: 1.05rem; margin-top: 19px; }
+      .service-card p { font-size: .75rem; }
+      .service-link { font-size: .72rem; }
+      .service-icon { width: 47px; height: 47px; }
+      .comfort-grid, .tech-layout, .faq-layout { grid-template-columns: 1fr; gap: 42px; }
+      .comfort-visual { min-height: 410px; }
+      .comfort-photo { inset: 0 28px 28px 0; border-radius: 24px 130px 24px 24px; }
+      .comfort-caption { width: 190px; padding: 18px; }
+      .tech-aside { position: static; }
+      .doctor-grid { grid-template-columns: 1fr; gap: 16px; }
+      .doctor-card { display: grid; grid-template-columns: 38% 1fr; }
+      .doctor-photo { height: 100%; min-height: 210px; }
+      .doctor-info { padding: 20px; }
+      .doctor-info h3 { font-size: 1.08rem; }
+      .journey-grid { grid-template-columns: 1fr; gap: 27px; }
+      .journey-step h3 { margin-top: 12px; }
+      .visit-panel { grid-template-columns: 1fr; padding: 26px; gap: 28px; }
+      .hours-box { padding: 22px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 38px 24px; }
+      .footer-grid > div:first-child { grid-column: 1 / -1; }
+      .footer-bottom { flex-direction: column; margin-top: 38px; }
+      .mobile-cta {
+        position: fixed; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+        left: 0; right: 0; bottom: 0; z-index: 60; padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+        background: rgba(255,255,255,.97); border-top: 1px solid var(--color-border);
+        box-shadow: 0 -8px 25px rgba(38,59,56,.08);
+      }
+      .mobile-cta .button { min-height: 48px; padding: 0 10px; font-size: .78rem; }
+      body { padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
+    }
+    @media (max-width: 390px) {
+      .service-card { padding: 15px; }
+      .service-card h3 { font-size: .98rem; }
+      .doctor-card { grid-template-columns: 34% 1fr; }
+      .doctor-info { padding: 15px; }
+      .doctor-info p { font-size: .75rem; }
+      .hours-row { font-size: .7rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Best Smile Dental Pte Ltd",
+    "url": "https://bestsmiledental.com.sg/",
+    "telephone": "+65 8978 7051",
+    "email": "contact@bestsmiledental.com.sg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11 Upper Boon Keng Road, #01-929",
+      "addressLocality": "Singapore",
+      "postalCode": "380011",
+      "addressCountry": "SG"
+    },
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Friday"],"opens":"10:00","closes":"19:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday","Thursday"],"opens":"10:00","closes":"20:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"18:00"}
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Best Smile Dental home">
+        <span class="brand-mark" aria-hidden="true">BS</span>
+        <span>
+          <span class="brand-name">Best Smile Dental</span>
+          <span class="brand-sub">Gentle care. Confident smiles.</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
+        <a href="#care">Our Care</a>
+        <a href="#approach">Our Approach</a>
+        <a href="#technology">Technology</a>
+        <a href="#dentists">Our Dentists</a>
+        <a href="#visit">Find Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="button button-outline" href="https://wa.me/6589787051" target="_blank" rel="noopener">WhatsApp Us</a>
+        <a class="button button-primary" href="https://bestsmiledental.com.sg/booking/">Book an Appointment</a>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Your neighbourhood dental clinic</span>
+          <h1>Feel at ease. Leave with a <em>healthier smile.</em></h1>
+          <p>Thoughtful, modern dental care in Upper Boon Keng. We take time to listen, explain your options clearly and help you feel comfortable at every step.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://bestsmiledental.com.sg/booking/">Book an Appointment <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="https://wa.me/6589787051" target="_blank" rel="noopener">Ask Us on WhatsApp</a>
+          </div>
+          <div class="hero-note"><span class="note-dot"></span> Gentle, affordable and reliable dental care for every smile</div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-photo">
+            <!-- Illustrative stock image. Replace with a clinic-approved Best Smile Dental photograph before launch. -->
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1100&q=85" alt="Illustrative photograph of a modern dental care setting" fetchpriority="high">
+          </div>
+          <div class="hero-stamp">
+            <div><strong>Care that starts with listening</strong><span>Clear explanations. Considerate treatment.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reassurance" aria-label="Clinic highlights">
+      <div class="container reassurance-grid">
+        <div class="reassurance-item"><span class="reassurance-mark"></span><span>Patient-first approach</span></div>
+        <div class="reassurance-item"><span class="reassurance-mark"></span><span>Modern dental technology</span></div>
+        <div class="reassurance-item"><span class="reassurance-mark"></span><span>Care across dental needs</span></div>
+        <div class="reassurance-item"><span class="reassurance-mark"></span><span>Upper Boon Keng location</span></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="care">
+      <div class="container">
+        <div class="service-intro">
+          <div class="section-heading">
+            <span class="eyebrow">Explore your options</span>
+            <h2>Care for every stage of your smile.</h2>
+            <p>From everyday dental health to more specialised treatment, explore the care available at Best Smile Dental.</p>
+          </div>
+          <a class="button button-outline" href="https://bestsmiledental.com.sg/">Explore All Services <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <!-- Exactly six custom SVG service icons, displayed as a 3-column by 2-row grid on desktop. -->
+        <div class="service-grid">
+          <article class="service-card">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M7 8.5c2.5-2.5 6-2 9-1 3-1 6.5-1.5 9 1 2.8 2.8 1.2 7.2-.2 10.5-1.2 2.8-1.4 7.2-3.8 7.2-2.1 0-2-5.2-5-5.2s-2.9 5.2-5 5.2c-2.4 0-2.6-4.4-3.8-7.2C5.8 15.7 4.2 11.3 7 8.5Z"/><path d="M12 11.5c1.3-.7 2.7-.7 4 0"/></svg>
+              </div>
+              <h3>General Dentistry</h3>
+              <p>Scaling and polishing, fillings, extractions, root canal care and routine dental treatment.</p>
+            </div>
+            <a class="service-link" href="https://bestsmiledental.com.sg/">Explore general care <span>→</span></a>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M5 17c3-6 7-9 11-9s8 3 11 9"/><path d="M7 19c2.5 4 5.5 6 9 6s6.5-2 9-6"/><path d="M10 17v4m4-6v7m4-7v7m4-5v4"/></svg>
+              </div>
+              <h3>Gum Care</h3>
+              <p>Support for gum disease, receding gums and suitable pinhole gum rejuvenation cases.</p>
+            </div>
+            <a class="service-link" href="https://bestsmiledental.com.sg/">Explore gum care <span>→</span></a>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M7 10c2-3 5-4 9-4s7 1 9 4"/><path d="M7 10c1 8 4 13 9 13s8-5 9-13"/><path d="M11 15h10"/><path d="M13 19h6"/><path d="M12 6l-1-2m9 2 1-2"/></svg>
+              </div>
+              <h3>Cosmetic & Restorative</h3>
+              <p>Whitening, veneers, smile makeovers, crowns, bridges and dentures.</p>
+            </div>
+            <a class="service-link" href="https://bestsmiledental.com.sg/">Explore smile options <span>→</span></a>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M8 6v20m16-20v20M8 10h16M8 16h16M8 22h16"/><path d="M12 10v12m8-12v12"/><circle cx="16" cy="16" r="2.5"/></svg>
+              </div>
+              <h3>Orthodontics</h3>
+              <p>Braces and clear aligner options, including Invisalign and Smartee.</p>
+            </div>
+            <a class="service-link" href="https://bestsmiledental.com.sg/">Explore teeth alignment <span>→</span></a>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M8 8h16v16H8z"/><path d="M12 12h8v8h-8z"/><path d="M16 3v5m0 16v5M3 16h5m16 0h5"/></svg>
+              </div>
+              <h3>Dental Implants</h3>
+              <p>Implant assessment and treatment planning supported by digital imaging.</p>
+            </div>
+            <a class="service-link" href="https://bestsmiledental.com.sg/">Explore implant care <span>→</span></a>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M16 27s-10-6-10-14a5.5 5.5 0 0 1 10-3 5.5 5.5 0 0 1 10 3c0 8-10 14-10 14Z"/><path d="M16 11v9m-4.5-4.5h9"/></svg>
+              </div>
+              <h3>Wisdom Teeth & Urgent Care</h3>
+              <p>Assessment for wisdom tooth concerns and urgent dental problems, subject to availability.</p>
+            </div>
+            <a class="service-link" href="https://wa.me/6589787051" target="_blank" rel="noopener">Ask about an appointment <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="approach">
+      <div class="container comfort-grid">
+        <div class="comfort-visual">
+          <div class="comfort-photo">
+            <!-- Illustrative stock image. Replace with a clinic-approved photograph before launch. -->
+            <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1000&q=85" alt="Illustrative close-up of a dental professional preparing for patient care" loading="lazy">
+          </div>
+          <div class="comfort-caption">
+            <strong>Know what to expect.</strong>
+            <span>We explain your condition and discuss suitable options before treatment.</span>
+          </div>
+        </div>
+
+        <div class="comfort-copy">
+          <span class="eyebrow">A more considered experience</span>
+          <h2>Dentistry that puts you in the conversation.</h2>
+          <p>We understand that dental visits can feel daunting. Our approach is to listen to your concerns, explain what we find and help you understand the options available for your needs and budget.</p>
+          <div class="benefit-list">
+            <div class="benefit">
+              <span class="benefit-check">✓</span>
+              <div><strong>Clear explanations</strong><span>Understand your dental condition and the reasons behind suggested treatment.</span></div>
+            </div>
+            <div class="benefit">
+              <span class="benefit-check">✓</span>
+              <div><strong>Transparent treatment planning</strong><span>Discuss suitable options and estimated fees before making a decision.</span></div>
+            </div>
+            <div class="benefit">
+              <span class="benefit-check">✓</span>
+              <div><strong>Comfort-conscious care</strong><span>A calm clinic environment with A-dec treatment chairs and a ceiling-mounted TV.</span></div>
+            </div>
+          </div>
+          <div style="margin-top:32px">
+            <a class="button button-primary" href="https://bestsmiledental.com.sg/booking/">Plan Your Visit <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section technology" id="technology">
+      <div class="container tech-layout">
+        <div class="tech-aside">
+          <span class="eyebrow">Modern tools, thoughtful care</span>
+          <h2>Technology that helps make things clearer.</h2>
+          <p>Digital tools can support diagnosis, treatment planning and patient understanding. Our team recommends them when they are appropriate for your dental needs.</p>
+          <div style="margin-top:30px">
+            <a class="button button-light" href="https://bestsmiledental.com.sg/service/advanced-digital-dentistry/">Discover Digital Dentistry <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="tech-list">
+          <article class="tech-row">
+            <span class="tech-number">01</span>
+            <div><h3>3D CBCT Imaging</h3><p>Three-dimensional imaging helps assess teeth, jawbone and surrounding structures for selected treatment plans.</p></div>
+          </article>
+          <article class="tech-row">
+            <span class="tech-number">02</span>
+            <div><h3>Digital Intraoral Scanning</h3><p>Digital scans create detailed records of teeth and gums without traditional impression materials.</p></div>
+          </article>
+          <article class="tech-row">
+            <span class="tech-number">03</span>
+            <div><h3>Computer-Guided Implant Planning</h3><p>Digital records and imaging help the dentist plan implant position before suitable procedures.</p></div>
+          </article>
+          <article class="tech-row">
+            <span class="tech-number">04</span>
+            <div><h3>Class B Sterilisation</h3><p>Modern sterilisation equipment supports the clinic's instrument processing and infection-control procedures.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dentists">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Meet the dental team</span>
+          <h2>People who take time to understand your needs.</h2>
+          <p>Get to know the dentists introduced by Best Smile Dental and learn more about their professional backgrounds.</p>
+        </div>
+
+        <div class="doctor-grid">
+          <article class="doctor-card">
+            <div class="doctor-photo">
+              <!-- Replace with the dentist's approved portrait. -->
+              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=700&q=80" alt="Illustrative portrait placeholder for Dr Javious Lim" loading="lazy">
+            </div>
+            <div class="doctor-info">
+              <span class="credential">Dental Surgeon · BDS</span>
+              <h3>Dr Javious Lim</h3>
+              <p>University of Dundee, UK. Dr Lim's profile describes a patient-centred approach focused on clear explanations and considered treatment options.</p>
+            </div>
+          </article>
+
+          <article class="doctor-card">
+            <div class="doctor-photo">
+              <!-- Replace with the dentist's approved portrait. -->
+              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=700&q=80" alt="Illustrative portrait placeholder for Dr Mark Fung" loading="lazy">
+            </div>
+            <div class="doctor-info">
+              <span class="credential">BChD Dentistry</span>
+              <h3>Dr Mark Fung</h3>
+              <p>University of Leeds. His profile highlights an interest in family dentistry and building rapport with patients.</p>
+            </div>
+          </article>
+
+          <article class="doctor-card">
+            <div class="doctor-photo">
+              <!-- Replace with the dentist's approved portrait. -->
+              <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=700&q=80" alt="Illustrative portrait placeholder for Dr Wilson Lai Chun Wai" loading="lazy">
+            </div>
+            <div class="doctor-info">
+              <span class="credential">Doctor of Dental Surgery</span>
+              <h3>Dr Wilson Lai Chun Wai</h3>
+              <p>University of Southern California. His profile emphasises helping patients feel at ease and make informed decisions.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Your visit, made clearer</span>
+          <h2>A simple path to getting started.</h2>
+          <p>Whether you are arranging a routine check-up or asking about a specific concern, start with a conversation.</p>
+        </div>
+        <div class="journey-grid">
+          <article class="journey-step">
+            <h3>Tell us what you need</h3>
+            <p>Contact the clinic or use the appointment page to request a suitable visit.</p>
+          </article>
+          <article class="journey-step">
+            <h3>Discuss your options</h3>
+            <p>Your dentist assesses your needs and explains relevant treatment choices and estimated fees.</p>
+          </article>
+          <article class="journey-step">
+            <h3>Make an informed decision</h3>
+            <p>Understand the proposed next steps and decide how you would like to proceed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="visit">
+      <div class="container">
+        <div class="visit-panel">
+          <div>
+            <span class="eyebrow">Find us in Upper Boon Keng</span>
+            <h2>Your next step can start with a simple hello.</h2>
+            <p>Visit Best Smile Dental at 11 Upper Boon Keng Road. The clinic states that it is less than a five-minute walk from Kallang MRT.</p>
+            <div class="visit-actions">
+              <a class="button button-primary" href="https://bestsmiledental.com.sg/booking/">Book an Appointment</a>
+              <a class="button button-outline" href="https://www.google.com/maps/search/?api=1&query=Best+Smile+Dental+11+Upper+Boon+Keng+Road+Singapore" target="_blank" rel="noopener">Get Directions ↗</a>
+            </div>
+            <p style="font-size:.78rem;margin-top:20px">11 Upper Boon Keng Road, #01-929, Singapore 380011</p>
+          </div>
+          <div class="hours-box">
+            <h3>Clinic hours</h3>
+            <div class="hours-row"><span>Monday, Tuesday & Friday</span><strong>10am – 7pm</strong></div>
+            <div class="hours-row"><span>Wednesday & Thursday</span><strong>10am – 8pm</strong></div>
+            <div class="hours-row"><span>Saturday</span><strong>10am – 6pm</strong></div>
+            <div class="hours-row"><span>Sunday & Public Holidays</span><strong>Closed</strong></div>
+            <p style="font-size:.7rem;color:var(--color-text-muted);margin-top:14px">Please contact the clinic to confirm availability before visiting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading">
+          <span class="eyebrow">Helpful information</span>
+          <h2>Questions before your visit?</h2>
+          <p>Here are a few useful starting points. Contact the clinic directly for advice about your own dental needs.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Where is Best Smile Dental located?</summary>
+            <p>Best Smile Dental is at 11 Upper Boon Keng Road, #01-929, Singapore 380011. The clinic states that it is less than a five-minute walk from Kallang MRT.</p>
+          </details>
+          <details>
+            <summary>What types of dental care are available?</summary>
+            <p>The clinic lists general dentistry, gum care, wisdom tooth treatment, braces and clear aligners, cosmetic and restorative dentistry, and dental implants. The dentist can advise which options are suitable for your needs.</p>
+          </details>
+          <details>
+            <summary>Can I ask a question before booking?</summary>
+            <p>Yes. You can contact the clinic by WhatsApp at +65 8978 7051 or email contact@bestsmiledental.com.sg.</p>
+          </details>
+          <details>
+            <summary>Are CHAS and MediSave available?</summary>
+            <p>The clinic states that CHAS support and MediSave claim assistance may be available for eligible patients and selected treatments. Please confirm eligibility and applicable details directly with the clinic.</p>
+          </details>
+          <details>
+            <summary>Can I get an urgent dental appointment?</summary>
+            <p>The clinic indicates that same-day and emergency care may be arranged where appointment slots allow. Contact the clinic to check availability for your concern.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top">
+            <span class="brand-mark" aria-hidden="true">BS</span>
+            <span>
+              <span class="brand-name">Best Smile Dental</span>
+              <span class="brand-sub">Gentle care. Confident smiles.</span>
+            </span>
+          </a>
+          <p class="footer-about">Gentle, affordable and reliable dental care in Upper Boon Keng, Singapore. Helping patients understand their options and feel more comfortable about dental visits.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <div class="footer-links">
+            <a href="#care">Our Care</a>
+            <a href="#approach">Our Approach</a>
+            <a href="#technology">Technology</a>
+            <a href="#dentists">Our Dentists</a>
+            <a href="#faq">FAQs</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Get in touch</h3>
+          <div class="footer-links">
+            <a href="tel:+6589787051">+65 8978 7051</a>
+            <a href="mailto:contact@bestsmiledental.com.sg">Email the clinic</a>
+            <a href="https://wa.me/6589787051" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://bestsmiledental.com.sg/booking/">Book an appointment</a>
+            <span>11 Upper Boon Keng Road, #01-929, Singapore 380011</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Best Smile Dental Pte Ltd. All rights reserved.</span>
+        <span>Designed around clearer choices and more comfortable care.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Exactly two persistent mobile conversion buttons. -->
+  <div class="mobile-cta" aria-label="Quick contact actions">
+    <a class="button button-outline" href="tel:+6589787051">Call the Clinic</a>
+    <a class="button button-primary" href="https://bestsmiledental.com.sg/booking/">Book Appointment</a>
+  </div>
+
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector("#primary-navigation");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = navigation.classList.toggle("is-open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+      menuButton.textContent = isOpen ? "×" : "☰";
+    });
+
+    navigation.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navigation.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation menu");
+        menuButton.textContent = "☰";
+      });
+    });
+
+    document.querySelector("#year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
